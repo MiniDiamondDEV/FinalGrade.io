@@ -1,3 +1,22 @@
+# FinalGrade.io 26.4.30
+
+September 2026 latest update. Open `index.html` in a browser, or serve this repository as a static site. The app remains self-contained in one HTML file with the classic student portal.
+
+- Category and assignment managers include search, clearer actions, and selection counts.
+- Settings, Help, and Quick Actions use anchored overlay menus with keyboard navigation.
+- Settings are grouped into six navigable sections.
+- The taskbar Save button appears while changes are pending and disappears after a successful save.
+- Missing and Cheated lock the score at zero. The previous score is remembered in the saved assignment and restored when the flag is removed.
+- Dropped preserves the score and locks editing until unmarked; it remains excluded from calculations. Incomplete, Turned In, and Late do not alter scores.
+- Student Assignments show flags immediately before scores; student views reflect manually saved data.
+- Bulk deletion now opens reliably and targets the selected assignment even when category names match. Clear Unlocked Scores respects flag locks.
+
+## Regression checks
+
+With Playwright installed and Chromium available, run `node tests/regression.cjs`. The test serves the HTML locally and uses an isolated browser context. It covers flag restoration after reload, Dropped locks, neutral statuses, pending-save visibility, duplicate category names in bulk deletion, student scores, settings, and mobile menus.
+
+## Previous documentation
+
 # 🔥 FinalGrade.io
 
 > **A powerful, modern grade calculation and progress-report tool for
