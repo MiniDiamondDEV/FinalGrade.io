@@ -1,3 +1,13 @@
+# 26.4.30 — September 2026 (Latest)
+
+Reworked category, assignment, and removal managers; added organized settings navigation and accessible taskbar overlay menus. Save is hidden on the taskbar until changes are pending.
+
+Grade flag score locks preserve prior scores across save/reload. Missing and Cheated show zero, Dropped keeps its score, and removing the flag restores editing. Neutral flags leave scores unchanged. Student Assignments show flags beside scores without changing the classic portal design.
+
+Fixed undefined variables in bulk assignment removal, ambiguous deletion with repeated category names, stale delayed status resets, and category edit dialogs opening behind the overview.
+
+---
+
 # 📋 What's New - FinalGrade.io Update History
 
 **Last Updated**: March 2026
